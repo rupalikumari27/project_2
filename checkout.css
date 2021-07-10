@@ -1,0 +1,175 @@
+#checkout_section{
+    padding: 2% 8%;
+    box-sizing: border-box;
+}
+
+.section_title{
+    font-size: 36px;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 48px;
+}
+
+.checout_countent_wrapper{
+    display: flex;
+    justify-content: start;
+}
+
+.card_list{
+    width: 50%;
+}
+
+.right_section{
+    width: 50%;
+    height: fit-content;
+    margin-top: 48px;
+    margin-left: 3%;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    padding: 16px;
+}
+
+.card_list > h3{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.checkout_item_card{
+    display: flex;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.checkout_card_img > img{
+    width: 80px;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+
+.checkout_card_details > h4{
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 18px;
+}
+
+.checkout_card_details > p{
+    margin: 0;
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.right_section > h3{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+#total_amount{
+    color: black;
+    opacity: 0.8;
+    font-size: 24px;
+    font-weight: 800;
+    margin-left: 4px;
+}
+
+#place_order_button{
+    background-color: #009688;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 36px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: white;
+}
+
+@media screen and (max-width: 500px){
+    .checout_countent_wrapper{
+        flex-direction: column;
+    }
+
+    .card_list, .right_section{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .section_title {
+        margin-bottom: 20px;
+    }
+
+    #place_order_button {
+        font-size: 16px;
+        padding: 10px 15px;
+    }
+}
+
+@media screen and (max-width: 300px){
+    .checkout_item_card{
+        flex-direction: column;
+    }
+
+    .checkout_card_img > img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 200px){
+    #place_order_button{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    
+    .section_title {
+        font-size: 26px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    main{
+        margin-top: 60px;
+    }
+
+    .card_list > h3 {
+        font-size: 14px;
+    }
+
+    .checkout_card_details > h4 {
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 15px;
+    }
+
+    .checkout_card_details > p {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .right_section > h3 {
+        font-size: 16px;
+    }
+    
+    .right_section > p {
+        font-size: 16px;
+    }
+
+    #total_amount {
+        font-size: 20px;
+    }
+    
+}

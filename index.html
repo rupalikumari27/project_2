@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Javascript Final Project</title>
+        <link rel="stylesheet" href="./index.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/35c398e458.js"></script>
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="./carousel/slick.css"/>
+    </head>
+    <body>
+        <header>
+            <nav id="top_bar">
+                <div class="left_menu">
+                    <div class="logo_wrapper">
+                        <a href="/index.html">
+                            <span>Shop</span>lane
+                        </a>
+                    </div>
+                    <a href="#clothing_section">Clothing</a>
+                    <a href="#accessory_section">Accessories</a>
+                </div>
+                <div class="search_wrapper">
+                    <i class="fas fa-search"></i>
+                    <input id="search-box" type="text" name="search" placeholder="Search for Clothing and Accessories"/>
+                </div>
+                <div class="right_menu">
+                    <div class="cart_wrapper">
+                        <p id="cart_item_count">0</p>
+                        <a href="./checkout.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                    <img src="./assets/rupali.jpg"/>
+                </div>
+                <div id="menu_dropdown">
+                    <i id="hamburger_icon" class="fas fa-bars"></i>
+                    <ul id="dropdown_list" class="dropdown">
+                        <li class="drop_profile_detail">
+                            <img src="./assets/rupali.jpg" >
+                            <p>Rupali</p>
+                            <i id="dropdown_close_icon" class="fas fa-times"></i>
+                        </li>
+                        <li><a id="clothing_redirection" href="#clothing_section">Clothing</a></li>
+                        <li><a id="accessory_redirection" href="#accessory_section">Accessories</a></li>
+                        <li>
+                            <a id="cart_redirection" href="./checkout.html">
+                                <i class="fas fa-shopping-cart"></i>
+                                <p class="cart_text">Cart</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main">
+            <!-- <section>
+                <div class="carousel">
+                    <img src="./assets/Carousel1.png" />
+                    <img src="./assets/Carousel2.png" />
+                    <img src="./assets/Carousel3.png" />
+                    <img src="./assets/Carousel4.png" />
+                </div> 
+            </section> 
+            <section id="clothing_section" class="product_Section">
+                <h3 class="section_title">Clothing for Men and Women</h3>
+                <div id="clothing_wrapper" class="products_wrapper">
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+            <section id="accessory_section" class="product_Section">
+                <h3 class="section_title">Accessories for Men and Women</h3>
+                <div id="accessories_wrapper" class="products_wrapper">
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2699</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper">
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                    <a href="./productDetails.html" class="each_product_wrapper"
+                        <img src="./assets/images/20200311_175549.jpg">
+                        <div class="product_data_wrapper">
+                            <h4>Men Navy Blue Solid Sweatshirt</h4>
+                            <h5>United Colors of Benetton</h5>
+                            <p>Rs 2599</p>
+                        </div>
+                    </a>
+                </div>
+            </section>  -->
+        </main>
+        <img class="edyoda_project_logo" src="./assets/edyoda_project_logo.png" alt="Edyoda Project Logo">
+        <footer>
+            <div>
+                <p class="footer_title">Online Store</p>
+                <a href="#clothing_section" class="footer_item">Men Clothing</a>
+                <a href="#clothing_section" class="footer_item">Women Clothing</a>
+                <a href="#accessory_section" class="footer_item">Men Accessories</a>
+                <a href="#accessory_section" class="footer_item">Women Accessories</a>
+            </div>
+            <div>
+                <p class="footer_title">Helpful Links</p>
+                <a href="/" class="footer_item">Home</a>
+                <a href="/" class="footer_item">About</a>
+                <a href="/" class="footer_item">Contact</a>
+            </div>
+            <div>
+                <p class="footer_title">Partners</p>
+                <a href="/" class="footer_item">Zara</a>
+                <a href="/" class="footer_item">Pataloons</a>
+                <a href="/" class="footer_item">Levis</a>
+                <a href="/" class="footer_item">Ucb</a>
+                <a href="/" class="footer_item">+Many More</a>
+            </div>
+            <div>
+                <p class="footer_title">Address</p>
+                <p class="footer_item">Building 101</p>
+                <p class="footer_item">Central Avenue</p>
+                <p class="footer_item">La - 902722</p>
+                <p class="footer_item">United States</p>
+            </div>
+        </footer>
+        <script src="./index.js"></script>
+        <script src="./carousel/slick.min.js"></script>
+    </body>
+</html>
